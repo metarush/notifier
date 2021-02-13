@@ -1,0 +1,35 @@
+{
+    "name": "metarush/notifier",
+    "type": "library",
+    "description": "Send multiple notifications using notifiers like email, Pushover, etc.",
+    "keywords": [
+        "notification",
+        "notifier",
+        "email",
+        "pushover"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "metarush/notifier contributors",
+            "homepage": "https://github.com/metarush/log-once/graphs/contributors"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MetaRush\\Notifier\\": "src",
+            "Tests\\": "tests\\unit"
+        }
+    },
+    "require": {
+        "php": ">=7.4",
+        "php-pushover/php-pushover": "^1.0",
+        "metarush/email-fallback": "^4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "phpstan/phpstan": "^0.12",
+        "roave/security-advisories": "dev-master",
+        "vlucas/phpdotenv": "^5.3"
+    }
+}
